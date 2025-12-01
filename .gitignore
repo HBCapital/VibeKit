@@ -110,3 +110,6 @@ themes/*/vendor/
 # Media uploads (optional - uncomment if you want to ignore uploads)
 # public/uploads/*
 # !public/uploads/.gitkeep
+
+# AI Context
+.ai/
