@@ -91,7 +91,7 @@ flowone serve
 
 FlowOne is an **open-core** project (Apache 2.0 License). We welcome all contributions from the community!
 
-- 📖 [Contribution Guidelines](./.ai/CONTRIBUTING.md)
+- 📖 [Contribution Guidelines](./CONTRIBUTING.md)
 - 💬 [Discord Community](https://discord.gg/flowone)
 - 🐛 [Issue Tracker](https://github.com/flowone/flowone/issues)
 
