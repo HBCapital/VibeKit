@@ -1,0 +1,31 @@
+# Build artifacts
+.vscode/**
+.vscode-test/**
+out/test/**
+src/**
+.gitignore
+.yarnrc
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/.eslintrc.json
+**/*.map
+**/*.ts
+
+# Parent directory - CRITICAL: exclude all parent directory references
+../**
+
+# Git - exclude all git files including parent directories
+**/.git/**
+**/.gitattributes
+**/.gitignore
+
+# Node
+node_modules/**
+
+# Test
+test/**
+.vscode-test/**
+
+# Misc
+.DS_Store
+*.vsix

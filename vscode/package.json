@@ -1,0 +1,122 @@
+{
+  "name": "vibekit-vscode",
+  "displayName": "VibeKit - AI Coding Assistant",
+  "description": "Sync VibeKit's 47 professional slash commands and global rules from Git to AI editors (Cursor, Windsurf, Antigravity)",
+  "version": "0.0.1",
+  "publisher": "vibekit",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets",
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vibekit.sync",
+        "title": "VibeKit: Sync Rules & Agents"
+      },
+      {
+        "command": "vibekit.configureRepo",
+        "title": "VibeKit: Configure Git Repository"
+      },
+      {
+        "command": "vibekit.enableAutoSync",
+        "title": "VibeKit: Enable Auto-Sync"
+      },
+      {
+        "command": "vibekit.disableAutoSync",
+        "title": "VibeKit: Disable Auto-Sync"
+      },
+      {
+        "command": "vibekit.showProvider",
+        "title": "VibeKit: Show Current Provider"
+      }
+    ],
+    "configuration": {
+      "title": "VibeKit",
+      "properties": {
+        "vibekit.gitRepo": {
+          "type": "string",
+          "default": "",
+          "description": "Git repository URL for rules and agents"
+        },
+        "vibekit.autoSync": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable automatic syncing"
+        },
+        "vibekit.syncInterval": {
+          "type": "number",
+          "default": 30,
+          "description": "Auto-sync interval in minutes"
+        },
+        "vibekit.provider": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "cursor",
+            "windsurf",
+            "antigravity",
+            "generic"
+          ],
+          "default": "auto",
+          "description": "Provider selection (auto-detect or force specific)"
+        },
+        "vibekit.gitBranch": {
+          "type": "string",
+          "default": "main",
+          "description": "Git branch to sync from"
+        },
+        "vibekit.gitToken": {
+          "type": "string",
+          "default": "",
+          "description": "Git authentication token (optional)"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "vibekit.sync",
+        "key": "ctrl+shift+v ctrl+shift+s",
+        "mac": "cmd+shift+v cmd+shift+s"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "dependencies": {
+    "simple-git": "^3.21.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.x",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "@vscode/test-electron": "^2.3.8",
+    "@vscode/vsce": "^2.22.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HBCapital/VibeCoding"
+  },
+  "license": "Apache-2.0"
+}

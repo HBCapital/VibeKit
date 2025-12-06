@@ -1,0 +1,45 @@
+{
+  "name": "vibekit",
+  "version": "0.0.1",
+  "description": "VibeKit - Extensions for modern code editors",
+  "private": true,
+  "workspaces": [
+    "extensions/*"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:vscode && npm run install:zed",
+    "install:vscode": "cd extensions/vscode && npm install",
+    "install:zed": "cd extensions/zed && npm install",
+    "build": "npm run build:vscode && npm run build:zed",
+    "build:vscode": "cd extensions/vscode && npm run compile",
+    "build:zed": "cd extensions/zed && npm run build",
+    "watch:vscode": "cd extensions/vscode && npm run watch",
+    "watch:zed": "cd extensions/zed && npm run watch",
+    "test": "npm run test:vscode && npm run test:zed",
+    "test:vscode": "cd extensions/vscode && npm test",
+    "test:zed": "cd extensions/zed && npm test",
+    "lint": "npm run lint:vscode && npm run lint:zed",
+    "lint:vscode": "cd extensions/vscode && npm run lint",
+    "lint:zed": "cd extensions/zed && npm run lint",
+    "package:vscode": "cd extensions/vscode && npm run package",
+    "package:zed": "cd extensions/zed && npm run package",
+    "clean": "npm run clean:vscode && npm run clean:zed",
+    "clean:vscode": "cd extensions/vscode && rm -rf out node_modules",
+    "clean:zed": "cd extensions/zed && rm -rf dist node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HBCapital/VibeCoding"
+  },
+  "keywords": [
+    "vscode-extension",
+    "zed-extension",
+    "code-editor",
+    "productivity"
+  ],
+  "author": "HBCapital",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

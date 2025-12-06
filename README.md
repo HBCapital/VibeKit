@@ -1,189 +1,209 @@
-# VibeCoding Template
+# VibeKit
 
-> A comprehensive project template for AI-assisted development
+> Professional AI coding assistant with 47 slash commands
 
-**VibeCoding** is a standardized project template designed to help AI assistants and development teams quickly bootstrap new software projects with proper documentation, development guidelines, and team collaboration standards.
+**VibeKit** is a comprehensive development workflow automation system providing 47 professional slash commands organized into 18 groups, covering everything from documentation generation to security audits.
 
-## 📋 What is VibeCoding?
+## 🎯 What is VibeKit?
 
-VibeCoding provides:
+VibeKit provides a structured approach to AI-assisted development through:
 
-- ✅ **Pre-structured documentation framework** - Ready-to-use templates for all essential project docs
-- ✅ **Development guidelines** - Best practices for code quality, testing, and collaboration
-- ✅ **AI-friendly initialization** - Systematic questions and placeholders for AI to fill
-- ✅ **Flexible templates** - Support for various project types (CMS, API, Web App, etc.)
-- ✅ **Multi-tech stack support** - Works with Python, Node.js, PHP, Java, and more
-- ✅ **Team collaboration ready** - Contributing guidelines, code standards, and security practices
+- **47 Slash Commands** organized in 18 logical groups
+- **Global Rules** for consistent AI behavior
+- **Multi-Editor Support** (Cursor, Windsurf, Antigravity)
+- **Git-Based Sync** via VSCode extension
 
-## 🎯 Who is this for?
+## ✨ Features
 
-### AI Assistants 🤖
+### 📝 Documentation (17 commands)
 
-- Follow structured initialization process
-- Ask systematic questions
-- Generate consistent project documentation
-- Create appropriate directory structures
+Generate any documentation: README, API docs, architecture, installation guides, etc.
 
-### Development Teams 👥
+### 🔍 Code Quality (4 commands)
 
-- Start new projects faster
-- Maintain consistent documentation standards
-- Follow established best practices
-- Onboard new team members easily
+Code review, architecture review, comprehensive audits, refactoring
 
-### Solo Developers 👨‍💻
+### 🔐 Security (2 commands)
 
-- Professional project structure from day one
-- Comprehensive documentation templates
-- Industry-standard guidelines
-- Future-proof organization
+OWASP Top 10 audits, security best practices
+
+### ⚡ Performance (2 commands)
+
+Performance profiling and optimization
+
+### 🔀 Git Workflows (3 commands)
+
+Conventional commits, PR descriptions, workflow guidance
+
+### 🌐 API Design (2 commands)
+
+RESTful/GraphQL API design and documentation
+
+### 🔄 Migrations (2 commands)
+
+Database and code migrations
+
+### 🧹 Cleanup (2 commands)
+
+Dead code removal, dependency cleanup
+
+### 💻 Language-Specific (3 commands)
+
+TypeScript, JavaScript, PHP best practices
+
+### 🛠️ Development Tools (10 commands)
+
+Testing, debugging, database design, UI/UX, DevOps, and more
 
 ## 🚀 Quick Start
 
-### Step 1: Get the Template
-
-**Option A: Using Terminal**
+### 1. Install VSCode Extension
 
 ```bash
-mkdir ProjectName
-git clone https://github.com/HBCapital/VibeCoding.git
-cd ProjectName
+# Clone repository
+git clone https://github.com/HBCapital/VibeCoding
+cd VibeKit
+
+# Install VSCode extension
+cd vscode
+npm install
+npm run compile
 ```
 
-**Option B: Using AI Agent Editors (Antigravity, Windsurf, Cursor)**
+Press `F5` in VSCode to launch Extension Development Host.
 
-1. Open a new empty project window
-2. Ask your agent:
-   > "Clone the VibeCoding repo (https://github.com/HBCapital/VibeCoding) here to start a new project."
+### 2. Configure Repository
 
-### Step 2: Initialize with AI
+1. Open Command Palette (`Ctrl+Shift+P`)
+2. Run: `VibeKit: Configure Git Repository`
+3. Enter: `https://github.com/HBCapital/VibeCoding`
 
-Ask your AI assistant to:
+### 3. Sync Commands
 
-1. Read [`PROJECT_INIT.md`](./PROJECT_INIT.md)
-2. Ask you the initialization questions
-3. Generate your project documentation
+Click VibeKit icon in status bar or run:
 
-### Step 3: Start Development
+```
+VibeKit: Sync Rules & Agents
+```
 
-Follow the generated documentation and guidelines in `docs/GUIDELINE.md`.
+### 4. Start Using
 
-## 📂 What's Included?
+In your AI editor, type:
 
-### Template Files (`.template.md`)
+```
+/vibekit
+```
 
-These files contain placeholders that AI will fill during initialization:
+This shows all available commands and quick start guide.
 
-- `README.template.md` - Project overview
-- `docs/ARCHITECTURE.template.md` - System architecture
-- `docs/TECH_STACK.template.md` - Technology stack details
-- `docs/ROADMAP.template.md` - Development roadmap
-- `docs/INSTALLATION.template.md` - Setup instructions
-- `docs/BUSINESS.template.md` - Business model (optional)
-- `docs/RISKS.template.md` - Risk analysis (optional)
-- `docs/MIGRATION.template.md` - Migration guide (optional)
+## 📦 Command Groups
 
-### Generic Guidelines (Keep as-is)
+| Group    | Count | Purpose                     |
+| -------- | ----- | --------------------------- |
+| doc-     | 17    | Documentation generation    |
+| review-  | 4     | Code review & audits        |
+| lang-    | 3     | Language-specific practices |
+| git-     | 3     | Version control workflows   |
+| perf-    | 2     | Performance optimization    |
+| sec-     | 2     | Security audits             |
+| api-     | 2     | API design                  |
+| migrate- | 2     | Migrations                  |
+| clean-   | 2     | Code cleanup                |
+| Others   | 10    | Testing, debugging, etc.    |
 
-These files don't need modification:
+**Total**: 47 commands + 1 help command
 
-- `docs/GUIDELINE.md` - Development principles and best practices
-- `LICENSE` - License file
+See [COMMANDS.md](./docs/COMMANDS.md) for complete reference.
 
-### Conditional Files (Generated based on project type)
+## 📁 Project Structure
 
-- `docs/CONTRIBUTING.md` - Contribution guide (for open-source projects)
-- `docs/SECURITY.md` - Security practices (if public security reporting)
+```
+VibeKit/
+├── agents/             # 47 slash commands
+├── rules/              # Global rules (vibekit.md)
+├── docs/               # Documentation
+├── extensions/         # Editor extensions
+│   ├── vscode/        # VSCode extension
+│   └── zed/           # Zed extension (coming soon)
+├── package.json        # Monorepo config
+└── README.md          # This file
+```
 
-### Initialization Files
+## 🎨 Supported Editors
 
-- `PROJECT_INIT.md` - Instructions for AI to initialize projects
-- `.ai/` - AI context directory (created during initialization)
+### Cursor
 
----
+- Rules: `.cursorrules`
+- Commands: `.cursor/agents/*.md`
 
-## 🤖 AI Initialization Process
+### Windsurf
 
-### For AI Assistants
+- Rules: `.windsurfrules`
+- Commands: `.windsurf/agents/*.md`
 
-When a user requests project initialization:
+### Antigravity (Google)
 
-1. **FIRST**: Ask about project idea and analyze (Step 0)
-   - Get project concept and initial features
-   - Suggest additional features
-   - Wait for user confirmation
-2. **Read** [`PROJECT_INIT.md`](./PROJECT_INIT.md) for complete instructions
-3. **Ask** user all 26 questions systematically
-4. **Process** each `.template.md` file:
-   - Replace `{{PLACEHOLDERS}}` with user's answers
-   - Save as final `.md` file
-   - Delete `.template.md` file
-5. **Generate** LICENSE file based on user's choice
-6. **Generate** `.ai/TODO.md` with project-specific task breakdown
-7. **Conditionally create** CONTRIBUTING.md and SECURITY.md
-8. **Create** `.ai/PROJECT_CONTEXT.md` with project details
-9. **Update** `.gitignore` to exclude `.ai/` directory
-10. **Create** directory structure for chosen tech stack
-
-### Post-Initialization Cleanup
-
-Files to delete after initialization:
-
-- `PROJECT_INIT.md` (instructions no longer needed)
-- All `.template.md` files (already processed)
-
----
+- Rules: `.antigravity/rules/*.md`
+- Commands: `.antigravity/agents/*.md`
 
 ## 📖 Documentation
 
-- **[PROJECT_INIT.md](./PROJECT_INIT.md)** - Complete initialization guide for AI
-- **[docs/GUIDELINE.md](./docs/GUIDELINE.md)** - Development guidelines and best practices
+- [Command Reference](./docs/COMMANDS.md) - All 47 commands
+- [VSCode Extension](./vscode/README.md) - Extension guide
+- [Development Guidelines](./docs/GUIDELINE.md) - Coding standards
+- [Architecture](./docs/ARCHITECTURE.md) - System design
+- [Monorepo Guide](./MONOREPO.md) - Project management
 
----
+## 🛠️ Development
 
-## 🎨 Supported Project Types
+### Install Dependencies
 
-VibeCoding templates support various project types:
+```bash
+npm install
+```
 
-- 🌐 Web Applications (Full-stack)
-- 🔌 API/Backend Services
-- 📝 CMS/Content Platforms
-- 📱 Mobile Backends
-- 🛒 E-commerce Platforms
-- ☁️ SaaS Applications
-- 🔧 Internal Tools/Dashboards
-- 📚 Libraries/Frameworks
+### Build Extensions
 
-## 🛠️ Supported Tech Stacks
+```bash
+npm run build
+```
 
-### Backend
+### Watch Mode
 
-- Python (FastAPI, Django, Flask)
-- Node.js (Express, NestJS, Fastify)
-- PHP (Laravel, Symfony)
-- Java (Spring Boot)
-- Go, Ruby, and more
+```bash
+npm run watch:vscode
+```
 
-### Frontend
+### Testing
 
-- Vue.js (Vue 3, Nuxt)
-- React (Next.js, CRA)
-- Angular
-- Svelte (SvelteKit)
-- Plain HTML/CSS/JS
+```bash
+npm test
+```
 
-### Databases
+See [MONOREPO.md](./MONOREPO.md) for detailed development guide.
 
-- PostgreSQL, MySQL/MariaDB
-- MongoDB, Redis
-- SQLite, and more
+## 🤝 Contributing
+
+Contributions welcome! See [CONTRIBUTING.md](./docs/CONTRIBUTING.md)
+
+### Workflow
+
+1. Fork repository
+2. Create feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'feat: add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open Pull Request
 
 ## 📄 License
 
-This template is licensed under the **MIT License** - see [LICENSE](./LICENSE)
+Apache-2.0 - See [LICENSE](./LICENSE)
 
-Projects created using this template can use any license you choose.
+## 🔗 Links
+
+- **Repository**: [github.com/HBCapital/VibeCoding](https://github.com/HBCapital/VibeCoding)
+- **Issues**: [Report bugs or request features](https://github.com/HBCapital/VibeCoding/issues)
+- **VSCode Marketplace**: Coming soon
 
 ---
 
-**Built with ❤️ for better AI-human collaboration**
+**Made with ❤️ by HBCapital**
