@@ -1,0 +1,6 @@
+[submodule "extensions/vscode"]
+	path = extensions/vscode
+	url = git@github.com:HBCapital/VibeKit-vscode.git
+[submodule "extensions/zed"]
+	path = extensions/zed
+	url = git@github.com:HBCapital/VibeKit-zed.git
